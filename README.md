@@ -140,10 +140,10 @@ Continue to the next step.
    
 shankar-alarm
 
-4. Add an optional description.
-5. Add tags if required.
-6. Review the alarm details.
-7. Click Next.
+3. Add an optional description.
+4. Add tags if required.
+5. Review the alarm details.
+6. Click Next.
 
 # **Preview and Create Alarm**
 
