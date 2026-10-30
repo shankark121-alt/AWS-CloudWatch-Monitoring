@@ -90,7 +90,112 @@ Select the AWS service whose metrics you want to monitor.
 6. Choose the metric named:
 
 InstanceEBSIOPSExceededCheck
-8. Select the required EC2 instance metric.
+
+7. Select the required EC2 instance metric.
+
+# Step 3: Configure Metric Details
+
+<img width="945" height="553" alt="image" src="https://github.com/user-attachments/assets/7a2fead7-15de-42ce-9b21-78f8f2838f57" />
+
+| Parameter       | Value                        |
+| --------------- | ---------------------------- |
+| Namespace       | AWS/EC2                      |
+| Metric Name     | InstanceEBSIOPSExceededCheck |
+| Statistic       | Average                      |
+| Period          | 5 minutes                    |
+| Threshold Type  | Static                       |
+| Condition       | Greater                      |
+| Threshold Value | 1                            |
+
+8. Select Static as the threshold type.
+
+9. Select Greater as the comparison condition.
+
+10. Enter 1 as the threshold value.
+
+11. Review the metric graph.
+
+12. Click Next to continue.
+
+# **Configure Alarm Actions**
+
+After configuring the metric, the Configure actions page will open.
+
+Under Notification, click Add notification if you want to configure SNS notifications.
+
+You can also configure Lambda, Auto Scaling, or EC2 actions if required.
+
+In your screenshot, no notification or other action is configured.
+
+Continue to the next step.
+
+<img width="1001" height="728" alt="image" src="https://github.com/user-attachments/assets/9a05fa69-4a37-4530-a3db-43bba503a5d6" />
+
+# **Add Alarm Details**
+
+<img width="1252" height="717" alt="image" src="https://github.com/user-attachments/assets/bcb0ea7b-f940-49cc-9fdb-790c9e5d34ac" />
+
+1. Enter the alarm name.
+2. Use the following alarm name:
+   
+shankar-alarm
+
+4. Add an optional description.
+5. Add tags if required.
+6. Review the alarm details.
+7. Click Next.
+
+# **Preview and Create Alarm**
+
+The Preview and create page will appear.
+
+Review the selected metric.
+
+Verify the namespace.
+
+Check the statistic and period.
+
+Verify the threshold condition.
+
+Check the alarm name.
+
+Confirm that the configuration is correct.
+
+Click Create alarm.
+
+<img width="848" height="582" alt="image" src="https://github.com/user-attachments/assets/32c9c38c-9c8e-4ecf-bcca-b0a4997b1cd7" />
+
+# **Verify Created Alarm**
+
+After clicking Create alarm, return to the Alarms page.
+
+Check the alarm list.
+
+Find your alarm named shankar-alarm.
+
+Verify that it appears in the list.
+
+Click the alarm name to open its details.
+
+<img width="800" height="454" alt="image" src="https://github.com/user-attachments/assets/498f0bb8-baa7-49d1-a6fa-020b72ed52e2" />
+
+# **View Alarm Details and Monitoring Graph**
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/025f1c7e-c650-4fa5-8d31-216834899651" />
+
+# **CONCLUSION**
+
+Through this practical, I learned how to use Amazon CloudWatch to monitor AWS resources and manage EC2 instance performance. I gained hands-on experience navigating CloudWatch, 
+exploring EC2 metrics, configuring alarm conditions, and creating a CloudWatch alarm named shankar-alarm. This practical helped me understand how CloudWatch identifies monitoring 
+conditions and helps administrators detect potential performance issues. Overall, I gained practical knowledge of AWS monitoring, alarm configuration, and cloud infrastructure management.
+
+
+
+
+
+
+
+
    
 
 
